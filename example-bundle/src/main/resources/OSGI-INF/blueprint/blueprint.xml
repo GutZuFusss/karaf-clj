@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:clj="https://github.com/GutZuFusss/karaf-clj">
+
+    <clj:cljBundle id="11">
+        <clj:start-fn>22</clj:start-fn>
+        <clj:stop-fn>33</clj:stop-fn>
+    </clj:cljBundle>
+
+</blueprint>

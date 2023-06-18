@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://github.com/GutZuFusss/karaf-clj">
+
+    <!-- ATTRIBUTES -->
+    <xs:attribute name="id" type="xs:string"/>
+
+    <!-- ELEMENTS -->
+    <xs:element name="start-fn" type="xs:string"/>
+    <xs:element name="stop-fn" type="xs:string"/>
+
+    <!-- COMPLEX -->
+    <xs:element name="cljBundle">
+        <xs:complexType>
+            <xs:attribute ref="id" use="required"/>
+            <xs:sequence>
+                <xs:element ref="start-fn"/>
+                <xs:element ref="stop-fn"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
